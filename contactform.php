@@ -7,7 +7,7 @@
         $message = $_POST['message'];
 
 
-        $mailto = "g.goel@sap.com";
+        $mailto = "gxgoel@hotmail.com;
         $headers = "From : Website".$mailFrom;
         $txt = "You have recieved an email from ".$name.".\n\n" .$message;
         $subject = "mail from basil website"
