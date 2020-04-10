@@ -11,5 +11,5 @@
         $headers = "From : Website".$mailFrom;
         $txt = "You have recieved an email from ".$name.".\n\n" .$message;
         $subject = "mail from basil website"
-        mail($mailto,$subject,$txt,$headers );
+        mail($mailto,$subject,$txt,$headers);
       }
