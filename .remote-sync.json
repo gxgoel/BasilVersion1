@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "transport": "ftp",
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "http://103.195.185.104/",
+  "port": "2082",
+  "target": "http://103.195.185.104/wp-admin/",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "basilswa",
+  "password": "SMS#gloml@01",
+  "watch": []
+}
