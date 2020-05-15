@@ -25,7 +25,7 @@
                         <li><a href="#features">Treatments</a></li>
                         <li><a href="#works">Our Team</a></li>
                         <li><a href="#feedbacks">testimonials</a></li>
-                        <li><a href="#plans">Contact</a></li>
+                        <li><a href="#form">Book Appointment</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
@@ -325,13 +325,27 @@
             </div>
         </section>
 
-        <section class="section-form">
+        <section class="section-form" id="form">
             <div class="row">
                 <h2>Book an appointment or ask us a question</h2>
             </div>
             <div class="row">
-                <form method="post" action="contactform.php" enctype="text/plain" class="contact-form">
+                <form method="post" action="mailer.php" enctype="text/plain" class="contact-form">
+                  <div class="row"
+
+                  <?php
+
+                  if($_GET['success'] == 1) {
+                    echo "<div class=\"form-messages success\"> Thank you! Your message has been sent.</div>";
+                    }
+                  if($_GET['success'] == -1){
+                    echo "<div class=\"form-messages error\"> Oops! Something went wrong.";
+                    }
+                   ?>
+                 </div>
+
                     <div class="row">
+
                         <div class="col span-1-of-3">
                             <label for="name">Name</label>
                         </div>
